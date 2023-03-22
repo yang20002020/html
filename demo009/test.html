@@ -1,0 +1,36 @@
+<!--超链接标签，
+    用于在效果中定义一个可以点击跳转的链接
+href：超链接跳转的路径 (必有属性)
+内网本机路径：相对路径和绝对路径
+互联网路径：http://地址
+本页：默认跳转到本页
+
+超链接正常工作：①a标签中必须有内容
+				②a标签必须有href属性
+
+注意：
+	①a标签内容体，不仅仅是文字，也可以是其他内容，例如图片
+	②a标签的href属性，不仅仅可以链接到html上，也可以链接到其他文件上
+            -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="">百度</a>
+    <a href="http://www.baidu.com">百度</a>
+    <a href="./demo.html"> 跳转页面</a>
+    <a href="./demo.html">
+        <img src="./img/001.jpeg">
+    </a>
+    <a href="./img/001.jpeg"> 链接到一个图片</a>
+</body>
+
+</html>
