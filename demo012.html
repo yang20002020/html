@@ -1,0 +1,113 @@
+<!--
+    单元格合并
+<td>或者<th>都有两个单元格合并属性：
+
+colspan：跨列合并单元格
+rowspan：跨行合并单元格
+
+
+合并步骤：
+①确定合并哪几个单元格，确定是跨列合并还是跨行合并
+②在第一个出现的单元格上书写 合并单元格属性
+③合并几个单元格，属性值就书写几
+④被合并的单元格必须删掉
+
+-->>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" width="100%">
+        <tr>
+            <td>姓名</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+        </tr>
+        <tr>
+            <td>yang</td>
+            <td>99</td>
+            <td>100</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>zhang</td>
+            <td>100</td>
+            <td>98</td>
+            <td>150</td>
+        </tr>
+    </table>
+    <!----------------------------->
+    <table border="1" width="100%">
+        <tr>
+            <td colspan="2">姓名</td>
+
+            <td>数学</td>
+            <td>英语</td>
+        </tr>
+        <tr>
+            <td>yang</td>
+            <td>99</td>
+            <td>100</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>zhang</td>
+            <td>100</td>
+            <td>98</td>
+            <td>150</td>
+        </tr>
+    </table>
+    <!----------------------------->
+    <table border="1" width="100%">
+        <tr>
+            <td>姓名</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+        </tr>
+        <tr>
+            <td rowspan="2">yang</td>
+            <td>99</td>
+            <td>100</td>
+            <td>120</td>
+        </tr>
+        <tr>
+
+            <td>100</td>
+            <td>98</td>
+            <td>150</td>
+        </tr>
+    </table>
+    <!----------------------------->
+    <table border="1" width="100%">
+        <tr>
+            <td>姓名</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">yang</td>
+
+            <td>100</td>
+            <td>120</td>
+        </tr>
+        <tr>
+
+            <td>100</td>
+            <td>98</td>
+            <td>150</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
