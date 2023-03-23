@@ -1,0 +1,35 @@
+<!--
+  单选框 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        用户名：<input type="text" /> <br />
+        密码： <input type="password" /> <br />
+
+        性别: <input type="radio" />男<input type="radio" />女 <br />
+
+        性别: <input type="radio" name="sex" value="man" />男<input type="radio" name="sex" value="woman" />女 <br />
+        <input type="submit" />
+        <!--           
+         (1) 单选框，用户只能选择，不能输入。指定value属性，value属性就是参数值  
+          value:设置该标签对应的参数值。   /   作为按钮的名字
+            value属性的设置策略：
+            ①文本框、密码框这样的表单输入项，可以不强制指定value，因为用户可以自由输入
+            ②单选框、复选框这样的表单输入项，必须强制指定value，因为用户无法输入，只能选择，如果不指定value，那么提交上去的只有on    
+            (2)运行该程序，浏览器会显示demo018.png所示的信息 ，即：
+            file:///C:/Users/26286/Desktop/1/html/demo018/test.html?sex=man             
+         -->
+    </form>
+</body>
+
+</html>
