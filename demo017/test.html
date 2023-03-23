@@ -1,0 +1,38 @@
+<!--
+    提交按钮、参数列表
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        用户名：<input type="text" /> <br />
+        密码： <input type="password" /> <br />
+
+        性别: <input type="radio" />男<input type="radio" />女 <br />
+
+        性别: <input type="radio" name="sex" />男<input type="radio" name="sex" />女 <br />
+        <!--提交按钮 必须写在表单之中-->
+        <input type="submit" />
+        <!--
+            （1） 点击提交按钮之后  浏览器会显示demo017.png图片
+            如下所示：
+                file:///C:/Users/26286/Desktop/1/html/demo017/test.html?sex=on
+                其中，
+            （2）  ?sex=on
+                ?后面为参数列表  
+                参数列表的格式: 
+                参数1=参数值1&参数2=参数值2&参数3=参数值3 
+            （3） sex=on,on表示选中 ； 单选框，用户只能选中，不能输入
+         -->
+    </form>
+</body>
+
+</html>
