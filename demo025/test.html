@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+    <select></select>标签  定义一个选择框
+
+name: 设置该标签对应的参数名
+multiple：设置该标签选项全部显示，并且可以进行多选提交。默认为单选。
+
+<option></option>标签
+选项标签，用于为一个选择框添加一个选项
+value:设置需要提交的参数值。
+selected:设置选项的默认选中状态
+
+
+注意事项：
+	Option的内容体一般是用来进行展示
+	参数值 应该是option的value属性值
+-->
+
+<body>
+
+    <form>
+        <select name="test1">
+            <option value="11">11</option></br>
+            <option value="12">22</option></br>
+            <option value="13">33</option></br>
+        </select><br />
+        <select name="test2">
+            <option value="21">21</option></br>
+            <option value="22">22</option></br>
+            <option value="23" selected="selected">23</option></br>
+        </select><br />
+        <select name="hobby" multiple="multiple">
+            <!-可以多选，并提交-->
+                <option value="code">编码</option></br>
+                <option value="read">读书</option></br>
+                <option value="run">跑步</option></br>
+        </select><br />
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
