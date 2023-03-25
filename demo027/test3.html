@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="test3.html" method="get">
+        <input type="text" name="uname">
+        <input type="submit" />
+    </form>
+    <!--
+      应用get方法 提交之后， 地址栏显示：file:///C:/Users/26286/Desktop/1/html/demo027/test3.html?uname=yang
+    Get提交方式特点：把数据拼接到地址栏上
+   
+
+      -->
+
+    <form action="test3.html" method="post">
+        <input type="text" name="uname">
+        <input type="submit" />
+    </form>
+    <!--
+           Get提交方式特点：把数据拼接到地址栏上
+    Post提交方式特点：没有把提交数据拼接到地址栏上。请求体
+    Get和post提交方式区别：
+    ①get提交的参数列表拼接到了地址栏后面
+    post方式不会 拼接地址栏
+    
+    ②get方式提交的数据 敏感信息不安全
+    Post方式提交的数据 相对安全
+    
+    ③get方式提交的数据量 有限的
+    Post方式从理论上提交的数据量 无限大
+    
+    尽量使用post方式提交表单
+        -->
+</body>
+
+</html>
