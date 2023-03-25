@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+    readonly:设置该标签的参数值只读，用户无法手动更改。数据是可以正常提交
+disabled:设置该标签不可用，参数值无法更改，且参数值也无法提交
+-->
+
+<body>
+    <form>
+        用户名:<input type="text" name="uname" /> <br />
+        密码 :<input type="password" name="password" /> <br />
+        姓名: <input type="text" name="name" value="zhangsan" readonly="readonly" /> <br />
+        别名: <input type="text" name="othername" value="lisi" disabled="disabled" /> <br />
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
